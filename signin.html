@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/pfavicon.png" type="image/x-icon">
-    <title>Sign-in Page</title>
+    <title>Piggyvest|dashboard</title>
     <link rel="stylesheet" href="signin.css">
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <img src="./images/piggyvest-logo.svg" alt="">
 
         <section>
@@ -18,15 +18,17 @@
                 <p>Securely login to your PiggyVest</p>
             </div>
 
-            <form action="#" class="form">
+            <form action="home.html" method="post" class="form" name="form" onsubmit="return validated()">
                 <div class="sign">
                     <Label for="emailtel"><b>Email or Phone Number</b></Label><br>
                     <input type="text" name="emailPhone" id="emailtel" required>
+                    <div id="email_error">Please fill up your correct Email or Phone</div>
                 </div>
 
                 <div class="sign">
                     <Label for="pwd"><b>Password</b></Label><br>
                     <input type="password" name="pwd" id="pwd" required>
+                    <div id="pass_error">Please fill up your password</div>
                 </div>
 
                 <div class="sign but">
@@ -34,7 +36,7 @@
                 </div>
             </form>
         </section>
-        
+
         <div class="foot">
             <div class="foot-1">
                 <a href="#">Don't have an account? Register</a>
@@ -42,8 +44,9 @@
             <div class="foot-2">
                 <a href="#">Forget Password?</a>
             </div>
-            
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
