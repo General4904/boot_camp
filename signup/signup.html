@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+  <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            
+            background-image: url('piggy2.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: relative;
+        }
+
+        .logo{
+
+            text-align: center ;
+        }
+
+        .card{
+            border-radius: 12px 12px 12px 0px;
+        }
+
+        h4{
+            padding-top: 20px;
+            color: #062863;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .welcome{
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        button{
+            height: 50px;
+            width: 350px;
+            padding: 5px;
+            border: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: rgb(218, 214, 214);
+        }
+
+    </style>
+</head>
+<body>
+   <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"  style="margin-top: 60px;">
+                    <div class="logo">
+                        <img src="logo.svg" alt="logo">
+                    </div>
+                    <div class="card mt-5">
+                       <h4>Create a Secure Account</h4>
+                       <p class="welcome">Welcome to the future of Savings & Investments</p>
+                       <!--Form starts here-->
+                       <form onsubmit ="return validateForm()" class="p-3 mb-4">
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="name" class="form-control" id="fullname" placeholder="Full Name" arial-describedby="fullname" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none;">
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" arial-describedby="email" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none;">
+                            <span id = "message2" style="color:red"> </span>
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="contact" class="form-label">Phone Number</label>
+                            <input type="name" class="form-control" id="contact" placeholder="Phone Number" arial-describedby="contact" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none;">
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" arial-describedby="password" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none;">
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="promocode" class="form-label">Referral Phone or Promo Code (Optional)</label>
+                            <input type="name" class="form-control" placeholder="Referral Phone or Promo Code" id="promocode" arial-describedby="promocode" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none;">
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="referral" class="form-label">How Did You Hear About Us(Optional)</label><br>
+                            <select name="referral" class="form-select" aria-label="select referral" style="background-color: rgba(228, 226, 226, 0.993); height: 50px; border: none; border-radius: 5px;">
+                              <option>Click to Select</option>
+                              <option value="facebook">Facebook</option>
+                              <option value="twitter">Twitter</option>
+                              <option value="instagram">Instagram</option>
+                              <option value="family">Family/Friends/Co-Worker Referral</option>
+                              <option value="googlesearch">Google Search</option>
+                              <option value="googleplay">Google Playstore</option>
+                              <option value="blog">Online Blog</option>
+                              <option value="newspaper">Local Newspaper</option>
+                              <option value="event">At an Event</option>
+                              <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mt-5">
+                            <button type="submit" class="form-control btn" style=" background-color: #062863; border-radius: 12px 12px 12px 0px;"><a href="#">Create Account</a</button>
+                        </div>
+                       </form>
+                    </div>
+                    <p class="account mt-3" style="text-align: center;">Already have an account?<a href="#">Login</a></p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+   </section>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
